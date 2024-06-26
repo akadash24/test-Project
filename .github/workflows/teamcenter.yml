@@ -1,0 +1,12 @@
+name: BMIDE Package Deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Create Backup
+      run: |
+        Xcopy "addition.py" \Copy /E/H/C/I
